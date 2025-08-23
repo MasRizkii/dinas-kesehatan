@@ -6,7 +6,7 @@ import FooterCopyright from "./FooterCopyright";
 export default function Footer() {
   return (
     <footer
-      className="relative text-white flex flex-col justify-between min-h-[70vh]"
+      className="relative text-white flex flex-col justify-between min-h-[70vh] cursor-pointer"
       style={{
         backgroundImage: "url('/foto gedung dkk.jpg')",
         backgroundSize: "cover",

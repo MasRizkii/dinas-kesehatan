@@ -1,17 +1,17 @@
 // Data aplikasi - gambar diambil dari public/
 const apps = [
   {
-    title: "MONITORING KUALITAS UDARA",
-    description: "Lorem ipsun jfueb jaduufb aohfoihef",
+    title: "YOH SEHAT KOTA SEMARANG",
+    description: "Merupakan aplikasi layanan kesehatan digital dari Pemerintah Kota Semarang. Fungsi utamanya",
     img: "/monitoring-kualitas-udara.png", // public/monitoring-kualitas-udara.png
-    link: "#"
+    link: "https://yohsehat.semarangkota.go.id/"
   },
   {
-    title: "YOH SEHAT KOTA SEMARANG",
+    title: "MONITORING KUALITAS UDARA",
     description:
-      "Lorem ipsun jfueb jaduufb aohfoihef haugaiuefu aufhuaefa uaelufauefaufe iwfifw",
+      "Adalah sistem atau aplikasi yang digunakan untuk mengukur kondisi udara di suatu wilayah.",
     img: "/monitoring-kualitas-udara1.png", // public/monitoring-kualitas-udara1.png
-    link: "#"
+    link: "http://119.2.50.170:9094/siscek/tingkatanpolusi.html"
   }
 ];
 

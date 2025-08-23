@@ -2,8 +2,24 @@
 
 @layer base{
   body{
-    font-family: "Poppins", sans-serif;
+    font-family: "Geist", sans-serif;
   }
+ 
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap');
+
+.playwrite-ca-edo {
+  font-family: "Playwrite CA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+}
+
+#edo {
+  font-family: "Playwrite CA";
+  font-size: 60px;
+}
+
 }
 
 html, body {

@@ -50,7 +50,7 @@ export default function Hero() {
           className="text-white font-semibold text-center mt-2 text-sm md:text-2xl italic"
           style={{ textShadow: "1px 1px 4px rgba(255, 255, 255, 0.5)" }}
         >
-          {currentSlide.description}
+        
         </p>
         <div className="absolute -mb-80 w-full max-w-md">
           <SearchBar />
