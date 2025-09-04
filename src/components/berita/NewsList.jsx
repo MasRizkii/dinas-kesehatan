@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NewsCard from "./NewsCard";
 import newsData from "../../data/newsData";
 
@@ -12,6 +12,11 @@ export default function NewsList() {
   const currentNews = newsData.slice(indexOfFirst, indexOfLast);
 
   const totalPages = Math.ceil(newsData.length / itemsPerPage);
+
+  // 🚀 Scroll otomatis ke atas tiap ganti halaman
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [currentPage]);
 
   return (
     <div className="flex-1">

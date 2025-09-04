@@ -1,7 +1,7 @@
 // components/HeroBerita.jsx
 import { useLocation, Link } from "react-router-dom";
 
-export default function HeroBerita() {
+export default function HeroProfil() {
   const location = useLocation();
 
   // Ambil path saat ini, pisahkan dengan "/"

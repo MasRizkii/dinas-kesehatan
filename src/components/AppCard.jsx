@@ -2,33 +2,45 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function AppCard({ title, description, img, link }) {
   return (
-    <div className="relative bg-[#F9F8F4] rounded-2xl shadow-lg flex flex-col sm:flex-row items-start p-4 gap-4">
+    <div className="relative bg-white rounded-3xl shadow-md flex flex-col sm:flex-row items-center sm:items-start p-4 gap-4">
       {/* Image */}
-      <div className="w-full sm:w-32 sm:h-32 bg-gray-300 rounded-lg flex-shrink-0 overflow-hidden">
-        <img
-          src={img}
-          alt={title}
-          className="w-full h-full object-contain rounded-lg"
-        />
-      </div>
+      <div className="w-full sm:w-40 flex-shrink-0 overflow-hidden rounded-lg relative group">
+  <img
+    src={img}
+    alt={title}
+    className="w-full h-32 sm:h-36 object-cover rounded-lg"
+  />
+  {/* Efek Glossy */}
+  <div
+    className="absolute inset-0 rounded-lg overflow-hidden"
+  >
+    <div
+      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent 
+                 translate-x-[-100%] group-hover:translate-x-[100%] 
+                 transition-transform duration-700 ease-in-out"
+    />
+  </div>
+</div>
 
       {/* Content */}
-      <div className="flex flex-col justify-between flex-1">
+      <div className="flex-1 flex flex-col justify-between">
         <div>
-          <h3 className="font-bold text-lg text-black">{title}</h3>
-          <p className="text-gray-700 mt-1">
-            {description && description.split(" ").length > 10
-              ? description.split(" ").slice(0, 10).join(" ") + "..."
-              : description}
+          <h3 className="font-bold text-base sm:text-lg text-gray-900">
+            {title}
+          </h3>
+          <p className="text-gray-600 mt-2 text-sm leading-relaxed">
+            {description}
           </p>
         </div>
         {link && (
-          <a
-            href={link}
-            className="absolute bottom-4 right-4 inline-flex items-center gap-1 bg-[#E34E45] text-white text-xs px-2 py-1 rounded-lg hover:bg-[#c93d38] transition"
-          >
-            Selengkapnya <FaArrowRight size={10} />
-          </a>
+          <div className="mt-4 flex justify-end">
+            <a
+              href={link}
+              className="inline-flex items-center gap-2 bg-[#E34E45] text-white text-xs px-5 py-1.5 rounded-lg hover:bg-[#c93d38] transition"
+            >
+              Selengkapnya <FaArrowRight size={12} />
+            </a>
+          </div>
         )}
       </div>
     </div>

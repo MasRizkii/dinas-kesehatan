@@ -44,6 +44,7 @@ const layananData = [
     subtitle: "",
     category: "Peta Kesehatan",
     linkText: "Kunjungi",
+    link :"",
     image: "/public/Icon web DKK MAP.png",
   },
 ];

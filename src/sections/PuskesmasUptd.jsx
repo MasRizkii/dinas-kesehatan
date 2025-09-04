@@ -39,10 +39,10 @@ export default function PuskesmasUptd() {
   };
 
   return (
-    <section className="py-16 bg-white select-none">
+    <section className="py-16 px-10 bg-white select-none">
       {/* Heading */}
       <div className="text-center max-w-2xl mx-auto mb-1">
-        <h2 id="edo" className="text-4xl font-bold text-[#FE4F2D]">Puskesmas & UPTD</h2>
+        <h2 className="edo text-4xl font-bold text-[#FE4F2D]">Puskesmas & UPTD</h2>
         <p className="text-gray-500 mt-2">
           Informasi lokasi puskesmas dan UPTD di Kota Semarang
         </p>

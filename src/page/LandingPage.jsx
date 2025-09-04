@@ -15,13 +15,15 @@ import Footer from "../components/Footer";*/}
 
 export default function LandingPage() {
   return (
-    <div className="container mx-auto">
+    <div className="">
       <Navbar />
       <Hero />
+      <div className="container mx-auto">
       <NewsSection />
       <AppSection />
       <LayananDigital />
       <PuskesmasUptd />
+      </div>
       {/*<Header />
       <Berita1 />
       <Aplikasi />

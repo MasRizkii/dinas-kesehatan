@@ -4,10 +4,10 @@ import { MoreHorizontal } from "lucide-react";
 
 export default function LayananDigital() {
   return (
-    <div className="relative mx-auto px-4 py-10 bg-[#FDFBEE] rounded-4xl cursor-pointer">
+    <div className="relative mx-auto px-10 py-10 bg-[#FDFBEE] rounded-4xl cursor-pointer select-none">
       {/* Heading */}
       <div className="text-center mb-8">
-        <h2 id="edo" className="text-[#FE4F2D] text-4xl font-bold">
+        <h2 className="edo text-[#FE4F2D] text-4xl font-bold">
           Layanan Digital
         </h2>
         <p className="text-gray-900 text-2xl font-semibold">

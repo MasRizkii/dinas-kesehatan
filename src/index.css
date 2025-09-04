@@ -15,7 +15,7 @@
   font-style: normal;
 }
 
-#edo {
+.edo {
   font-family: "Playwrite CA";
   font-size: 60px;
 }
@@ -24,6 +24,7 @@
 
 html, body {
   overflow-x: hidden;
+
 
 }
 

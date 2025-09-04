@@ -21,19 +21,22 @@ export default function SidebarBerita() {
         {newsData.slice(0, 4).map((news) => (
           <div
             key={news.id}
-            className="flex items-center gap-2 cursor-pointer hover:opacity-80"
+            className="flex items-center gap-2 cursor-pointer hover:opacity-80 h-24"
           >
-            <div className="w-45 h-20 bg-gray-200 rounded overflow-hidden object-top">
+            {/* Thumbnail */}
+            <div className="w-28 h-full bg-gray-200 rounded overflow-hidden">
               <img
                 src={news.image}
                 alt={news.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
-            <div>
-              <p className="text-sm font-medium text-gray-800 line-clamp-2">
+
+            {/* Konten */}
+            <div className="flex-1 flex flex-col justify-between h-full">
+              <a className="text-sm font-medium text-gray-800 line-clamp-2 hover:text-red-500">
                 {news.title}
-              </p>
+              </a>
               <span className="text-xs text-gray-500">{news.date}</span>
             </div>
           </div>
