@@ -37,7 +37,7 @@ export default function MisiSection() {
       className="w-full flex flex-col items-center mt-10"
     >
       {/* Label Misi */}
-      <div className="relative bg-zinc-700 px-8 py-2 rounded-full text-xl font-bold shadow z-20">
+      <div className="relative bg-zinc-700 px-8 py-2 rounded-full text-xl font-bold shadow z-20 -translate-y-5">
         MISI
       </div>
 

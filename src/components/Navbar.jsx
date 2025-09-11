@@ -64,7 +64,7 @@ export default function Navbar() {
         className="flex items-center justify-between bg-white/60 backdrop-blur-md py-4 lg:px-12 shadow fixed left-1/2 transform -translate-x-1/2 w-full lg:w-auto"
       >
         {/* Logo */}
-        <div className="flex items-center gap-3 px-6">
+        <div className="flex items-center gap-3 px-6 cursor-default">
           <img
             src="/logo_pemkot_semarang.png"
             alt="Logo"

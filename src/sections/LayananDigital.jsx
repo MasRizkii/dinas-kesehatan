@@ -25,7 +25,7 @@ export default function LayananDigital() {
 
       {/* Button */}
       <div className="flex justify-center mt-8">
-        <button className="flex items-center gap-2 bg-[#FE4F2D] text-white px-3 py-1 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-[#e85f44] hover:scale-[1.02]">
+        <button className="flex items-center gap-2 bg-[#FE4F2D] text-white px-3 py-1 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-[#e85f44] hover:scale-[1.02] cursor-pointer">
           Lihat Semua Layanan
           <MoreHorizontal className="w-4 h-4" />
         </button>
