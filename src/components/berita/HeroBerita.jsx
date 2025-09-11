@@ -29,7 +29,7 @@ export default function HeroBerita() {
         <nav className="text-white text-sm md:text-base">
           <ol className="flex space-x-2">
             <li>
-              <Link to="/" className="hover:underline">
+              <Link to="/" className="hover:underline hover:text-blue-500">
                 Beranda
               </Link>
             </li>
@@ -37,12 +37,12 @@ export default function HeroBerita() {
               const to = `/${pathnames.slice(0, index + 1).join("/")}`;
               const isLast = index === pathnames.length - 1;
               return (
-                <li key={to} className="flex space-x-2">
+                <li key={to} className="flex space-x-2 hover:text-blue-500 cursor-pointer">
                   <span>{">"}</span>
                   {isLast ? (
                     <span className="capitalize">{value}</span>
                   ) : (
-                    <Link to={to} className="hover:underline capitalize">
+                    <Link to={to} className="hover:underline capitalize ">
                       {value}
                     </Link>
                   )}

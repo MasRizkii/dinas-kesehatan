@@ -131,7 +131,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="lg:hidden px-6 cursor-pointer">
+        <div className="lg:hidden px-6 cursor-pointer hover:scale-[1.03]">
           <button onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
               <FaTimes size={20} className="text-[#3D74B6]" />
