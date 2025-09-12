@@ -1,16 +1,20 @@
-// components/HeroBerita.jsx
 import { useLocation, Link } from "react-router-dom";
+import newsData from "../../data/newsData"; // impor newsData
+
+// Fungsi memotong judul menjadi 10 huruf + ...
+const truncateTitle = (title) => {
+  if (!title) return "";
+  return title.length > 10 ? title.slice(0, 10) + "..." : title;
+};
 
 export default function HeroBerita() {
   const location = useLocation();
-
-  // Ambil path saat ini, pisahkan dengan "/"
   const pathnames = location.pathname.split("/").filter((x) => x);
 
   return (
     <div className="relative w-full h-[300px] sm:h-[400px] overflow-hidden">
       <img
-        src="/public/photo-1575573685828-7c1e20f05124.jpg"
+        src="/photo-1575573685828-7c1e20f05124.jpg"
         alt="Hero Berita"
         className="w-full h-full object-cover"
       />
@@ -36,14 +40,27 @@ export default function HeroBerita() {
             {pathnames.map((value, index) => {
               const to = `/${pathnames.slice(0, index + 1).join("/")}`;
               const isLast = index === pathnames.length - 1;
+
+              // Jika path mengandung angka (ID), cari judul berita
+              let displayValue = value;
+              if (!isNaN(value)) {
+                const berita = newsData.find(
+                  (item) => String(item.id) === value
+                );
+                displayValue = truncateTitle(berita?.title || value);
+              }
+
               return (
-                <li key={to} className="flex space-x-2 hover:text-blue-500 cursor-pointer">
+                <li
+                  key={to}
+                  className="flex space-x-2 hover:text-blue-500 cursor-pointer"
+                >
                   <span>{">"}</span>
                   {isLast ? (
-                    <span className="capitalize">{value}</span>
+                    <span className="capitalize">{displayValue}</span>
                   ) : (
-                    <Link to={to} className="hover:underline capitalize ">
-                      {value}
+                    <Link to={to} className="hover:underline capitalize">
+                      {displayValue}
                     </Link>
                   )}
                 </li>

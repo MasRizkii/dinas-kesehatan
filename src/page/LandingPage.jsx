@@ -6,6 +6,8 @@ import AppCard from "../components/AppCard";
 import AppSection from "../sections/AppSection";
 import LayananDigital from "../sections/LayananDigital";
 import PuskesmasUptd from "../sections/PuskesmasUptd";
+import Popup from "../components/Popup";
+import PopupStatic from "../components/PopupStatic";
 {/*import Header from "../components/Header";
 import Berita1 from "../components/Berita1";
 import Aplikasi from "../components/Aplikasi";
@@ -15,9 +17,11 @@ import Footer from "../components/Footer";*/}
 
 export default function LandingPage() {
   return (
-    <div className="">
+    <div className="relative">
       <Navbar />
       <Hero />
+      <PopupStatic />
+      <Popup />
       <div className="container mx-auto">
       <NewsSection />
       <AppSection />

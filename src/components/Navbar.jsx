@@ -134,9 +134,9 @@ export default function Navbar() {
         <div className="lg:hidden px-6 cursor-pointer hover:scale-[1.03]">
           <button onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
-              <FaTimes size={20} className="text-[#3D74B6]" />
+              <FaTimes size={20} className="text-[#3D74B6] hover:scale-[1.3] cursor-pointer" />
             ) : (
-              <FaBars size={20} className="text-[#3D74B6]" />
+              <FaBars size={20} className="text-[#3D74B6] hover:scale-[1.3] cursor-pointer" />
             )}
           </button>
         </div>
@@ -175,11 +175,6 @@ export default function Navbar() {
   className="py-2 font-bold text-gray-700 hover:text-[#3D74B6] text-left flex items-center gap-2"
 >
   <span>Layanan Publik</span>
-  <img
-    src="/public/3.png"   // simpan file di folder /public/arrow.png
-    alt="Layanan Publik"
-    className="h-4 w-4 object-contain transition duration-300 group-hover:brightness-0 group-hover:invert"
-  />
 </button>
 
               <NavLink to="https://dinkes.semarangkota.go.id/ppid" className="py-2 font-bold text-gray-700 hover:text-[#3D74B6]">

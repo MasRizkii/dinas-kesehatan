@@ -88,7 +88,7 @@ export default function NewsDetail() {
         </div>
 
         {/* Konten */}
-        <p className="text-gray-700 leading-relaxed text-justify">
+        <p className="items-center mx-auto text-gray-700 leading-relaxed max-w-2xl text-justify">
           {news.content}
         </p>
 
